@@ -1,0 +1,292 @@
+# SQL Assignment
+
+## Candidate Details
+
+- Name: SATYAM SINGH
+- Position: Data Analyst
+- Submission Date: 23/06/2026
+
+---
+
+# Database Schema
+
+## Department Table
+
+```sql
+CREATE TABLE Department (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(50)
+);
+```
+
+### Department Data
+
+```sql
+INSERT INTO Department VALUES
+(101, 'HR'),
+(102, 'IT'),
+(103, 'Finance'),
+(104, 'Sales'),
+(105, 'Marketing');
+```
+
+---
+
+## Employee Table
+
+```sql
+CREATE TABLE Employee (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50),
+    salary DECIMAL(10,2),
+    hire_date DATE,
+    department_id INT,
+    FOREIGN KEY (department_id)
+    REFERENCES Department(department_id)
+);
+```
+
+### Employee Data
+
+```sql
+INSERT INTO Employee VALUES
+(1, 'Amit', 50000, '2025-01-15', 101),
+(2, 'Priya', 75000, '2024-12-20', 102),
+(3, 'Rahul', 90000, '2024-05-10', 102),
+(4, 'Sneha', 60000, '2025-03-12', 103),
+(5, 'Vikas', 120000, '2023-11-08', 104),
+(6, 'Anjali', 85000, '2025-04-01', 105),
+(7, 'Rohit', 70000, '2025-02-14', 101),
+(8, 'Neha', 95000, '2024-10-25', 103),
+(9, 'Karan', 110000, '2025-05-05', 104),
+(10, 'Pooja', 65000, '2025-06-01', 105);
+```
+
+---
+
+## Duplicate Records Table
+
+```sql
+CREATE TABLE Employee_Duplicate (
+    emp_id INT,
+    emp_name VARCHAR(50),
+    salary DECIMAL(10,2),
+    department_id INT
+);
+```
+
+### Duplicate Data
+
+```sql
+INSERT INTO Employee_Duplicate VALUES
+(1,'Amit',50000,101),
+(2,'Priya',75000,102),
+(3,'Rahul',90000,102),
+(1,'Amit',50000,101),
+(4,'Sneha',60000,103),
+(5,'Vikas',120000,104),
+(2,'Priya',75000,102),
+(6,'Anjali',85000,105),
+(7,'Rohit',70000,101),
+(7,'Rohit',70000,101);
+```
+
+---
+
+# Question 1: Top 5 Highest Salary Employees
+
+## SQL Query
+
+```sql
+SELECT *
+FROM Employee
+ORDER BY salary DESC
+LIMIT 5;
+```
+
+## Output Screenshot
+
+![Q1 Output](screenshots/q1.png)
+
+---
+
+# Question 2: Department Wise Employee Count
+
+## SQL Query
+
+```sql
+SELECT d.department_name,
+       COUNT(e.emp_id) AS employee_count
+FROM Department d
+JOIN Employee e
+ON d.department_id = e.department_id
+GROUP BY d.department_name;
+```
+
+## Output Screenshot
+
+![Q2 Output](screenshots/q2.png)
+
+---
+
+# Question 3: Second Highest Salary
+
+## SQL Query
+
+```sql
+SELECT MAX(salary) AS second_highest_salary
+FROM Employee
+WHERE salary <
+(
+    SELECT MAX(salary)
+    FROM Employee
+);
+```
+
+## Output Screenshot
+
+![Q3 Output](screenshots/q3.png)
+
+---
+
+# Question 4: Employees Whose Salary Is Greater Than Department Average
+
+## SQL Query
+
+```sql
+SELECT e.*
+FROM Employee e
+WHERE e.salary >
+(
+    SELECT AVG(salary)
+    FROM Employee
+    WHERE department_id = e.department_id
+);
+```
+
+## Output Screenshot
+
+![Q4 Output](screenshots/q4.png)
+
+---
+
+# Question 5: Inner Join
+
+## SQL Query
+
+```sql
+SELECT e.emp_id,
+       e.emp_name,
+       d.department_name
+FROM Employee e
+INNER JOIN Department d
+ON e.department_id = d.department_id;
+```
+
+## Output Screenshot
+
+![Q5 Output](screenshots/q5.png)
+
+---
+
+# Question 6: Left Join
+
+## SQL Query
+
+```sql
+SELECT e.emp_id,
+       e.emp_name,
+       d.department_name
+FROM Employee e
+LEFT JOIN Department d
+ON e.department_id = d.department_id;
+```
+
+## Output Screenshot
+
+![Q6 Output](screenshots/q6.png)
+
+---
+
+# Question 7: Group By with Having
+
+## SQL Query
+
+```sql
+SELECT department_id,
+       COUNT(*) AS total_employees
+FROM Employee
+GROUP BY department_id
+HAVING COUNT(*) > 1;
+```
+
+## Output Screenshot
+
+![Q7 Output](screenshots/q7.png)
+
+---
+
+# Question 8: Employees Hired in Last 6 Months
+
+## SQL Query
+
+```sql
+SELECT *
+FROM Employee
+WHERE hire_date >= DATE_SUB(CURDATE(), INTERVAL 6 MONTH);
+```
+
+## Output Screenshot
+
+![Q8 Output](screenshots/q8.png)
+
+---
+
+# Question 9: Find Duplicate Records
+
+## SQL Query
+
+```sql
+SELECT emp_id,
+       emp_name,
+       salary,
+       department_id,
+       COUNT(*) AS duplicate_count
+FROM Employee_Duplicate
+GROUP BY emp_id,
+         emp_name,
+         salary,
+         department_id
+HAVING COUNT(*) > 1;
+```
+
+## Output Screenshot
+
+![Q9 Output](screenshots/q9.png)
+
+---
+
+# Question 10: Remove Duplicate Records
+
+## SQL Query
+
+```sql
+CREATE TABLE Employee_Duplicate_Clean AS
+SELECT DISTINCT *
+FROM Employee_Duplicate;
+```
+
+## Output Screenshot
+
+![Q10 Output](screenshots/q10.png)
+
+---
+
+
+```
+
+---
+
+# Conclusion
+
+Successfully created tables, inserted records, and executed all required SQL queries including joins, aggregation, subqueries, duplicate handling, and date functions.

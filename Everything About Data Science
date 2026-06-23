@@ -1,0 +1,498 @@
+# 📊 Data Science & Data Analytics Complete Guide
+
+![Data Science](https://img.shields.io/badge/Data%20Science-Learning-blue)
+![Data Analytics](https://img.shields.io/badge/Data%20Analytics-Career-green)
+![Python](https://img.shields.io/badge/Python-Programming-yellow)
+![SQL](https://img.shields.io/badge/SQL-Database-orange)
+
+---
+
+# 📖 Table of Contents
+
+1. What is Data Science?
+2. What is Data Analytics?
+3. Difference Between Data Science and Data Analytics
+4. Data Science Lifecycle
+5. Data Analyst Roadmap
+6. Data Scientist Roadmap
+7. Required Skills
+8. Tools & Technologies
+9. Career Path
+10. Salary Expectations
+11. Projects for Beginners
+12. Interview Preparation
+13. Learning Resources
+14. Certifications
+15. Future Scope
+
+---
+
+# 🚀 What is Data Science?
+
+Data Science is the process of collecting, cleaning, analyzing, and extracting meaningful insights from data using mathematics, statistics, programming, and machine learning.
+
+### Main Goals
+
+- Predict future outcomes
+- Identify patterns
+- Make data-driven decisions
+- Build AI/ML solutions
+
+### Applications
+
+- Healthcare
+- Banking
+- E-commerce
+- Marketing
+- Social Media
+- Manufacturing
+- Government
+
+---
+
+# 📈 What is Data Analytics?
+
+Data Analytics focuses on examining historical data to discover trends, patterns, and business insights.
+
+### Types of Analytics
+
+### 1. Descriptive Analytics
+"What happened?"
+
+Example:
+- Monthly Sales Report
+
+### 2. Diagnostic Analytics
+"Why did it happen?"
+
+Example:
+- Sales dropped due to fewer customers
+
+### 3. Predictive Analytics
+"What might happen?"
+
+Example:
+- Forecasting next month's sales
+
+### 4. Prescriptive Analytics
+"What should we do?"
+
+Example:
+- Suggesting marketing strategies
+
+---
+
+# ⚔️ Data Science vs Data Analytics
+
+| Feature | Data Analyst | Data Scientist |
+|----------|-------------|---------------|
+| Focus | Business Insights | Predictive Models |
+| Programming | Basic to Intermediate | Advanced |
+| SQL | High | High |
+| Statistics | Medium | High |
+| Machine Learning | Optional | Required |
+| Dashboarding | Required | Optional |
+| Salary | Good | Higher |
+
+---
+
+# 🔄 Data Science Lifecycle
+
+```text
+Business Problem
+       ↓
+Data Collection
+       ↓
+Data Cleaning
+       ↓
+Exploratory Data Analysis
+       ↓
+Feature Engineering
+       ↓
+Model Building
+       ↓
+Model Evaluation
+       ↓
+Deployment
+       ↓
+Monitoring
+```
+
+---
+
+# 🛣️ Data Analyst Roadmap
+
+## Phase 1: Excel
+
+Learn:
+
+- VLOOKUP
+- XLOOKUP
+- Pivot Tables
+- Conditional Formatting
+- Dashboards
+
+Duration: 2 Weeks
+
+---
+
+## Phase 2: SQL
+
+Learn:
+
+- SELECT
+- WHERE
+- GROUP BY
+- HAVING
+- JOINS
+- Subqueries
+- CTEs
+- Window Functions
+
+Duration: 4 Weeks
+
+---
+
+## Phase 3: Statistics
+
+Learn:
+
+- Mean
+- Median
+- Mode
+- Standard Deviation
+- Probability
+- Hypothesis Testing
+
+Duration: 2 Weeks
+
+---
+
+## Phase 4: Python
+
+Learn:
+
+- Variables
+- Loops
+- Functions
+- OOP
+
+Libraries:
+
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+
+Duration: 4 Weeks
+
+---
+
+## Phase 5: Data Visualization
+
+Tools:
+
+- Power BI
+- Tableau
+- Excel Dashboards
+
+Duration: 2 Weeks
+
+---
+
+## Phase 6: Projects
+
+Build:
+
+- Sales Dashboard
+- HR Analytics Dashboard
+- Financial Analytics Dashboard
+- Customer Churn Analysis
+
+Duration: 4 Weeks
+
+---
+
+# 🤖 Data Scientist Roadmap
+
+After Data Analytics:
+
+### Machine Learning
+
+Learn:
+
+- Linear Regression
+- Logistic Regression
+- Decision Trees
+- Random Forest
+- XGBoost
+
+### Deep Learning
+
+Learn:
+
+- Neural Networks
+- TensorFlow
+- PyTorch
+
+### MLOps
+
+Learn:
+
+- Docker
+- Kubernetes
+- AWS
+- Azure
+
+---
+
+# 🛠️ Tools & Technologies
+
+## Data Analysis
+
+- Microsoft Excel
+- SQL
+- Python
+- Pandas
+- NumPy
+
+## Visualization
+
+- Power BI
+- Tableau
+- Looker Studio
+- Matplotlib
+
+## Machine Learning
+
+- Scikit-Learn
+- TensorFlow
+- PyTorch
+
+## Databases
+
+- MySQL
+- PostgreSQL
+- MongoDB
+
+## Cloud
+
+- AWS
+- Azure
+- Google Cloud
+
+## Version Control
+
+- Git
+- GitHub
+
+---
+
+# 💻 Programming Languages
+
+### Beginner
+
+- SQL
+- Python
+
+### Advanced
+
+- R
+- Scala
+- Java
+
+---
+
+# 📚 Important Python Libraries
+
+| Library | Purpose |
+|-----------|---------|
+| NumPy | Numerical Computing |
+| Pandas | Data Analysis |
+| Matplotlib | Visualization |
+| Seaborn | Visualization |
+| Scikit-Learn | Machine Learning |
+| TensorFlow | Deep Learning |
+| PyTorch | Deep Learning |
+
+---
+
+# 📊 Data Analyst Career Path
+
+```text
+Fresher
+   ↓
+Junior Data Analyst
+   ↓
+Data Analyst
+   ↓
+Senior Data Analyst
+   ↓
+Business Analyst
+   ↓
+Analytics Manager
+   ↓
+Head of Analytics
+```
+
+---
+
+# 🤖 Data Scientist Career Path
+
+```text
+Fresher
+   ↓
+Data Analyst
+   ↓
+Data Scientist
+   ↓
+Senior Data Scientist
+   ↓
+Lead Data Scientist
+   ↓
+AI Engineer
+   ↓
+Head of AI
+```
+
+---
+
+# 💰 Salary Expectations (India)
+
+| Role | Experience | Salary |
+|--------|-----------|---------|
+| Data Analyst | Fresher | ₹4-8 LPA |
+| Data Analyst | 2-5 Years | ₹8-15 LPA |
+| Senior Analyst | 5+ Years | ₹15-25 LPA |
+| Data Scientist | Fresher | ₹6-12 LPA |
+| Data Scientist | 3+ Years | ₹12-30 LPA |
+
+---
+
+# 📂 Beginner Projects
+
+### SQL Projects
+
+- Employee Management System
+- Sales Database Analysis
+- E-commerce Database
+
+### Python Projects
+
+- IPL Data Analysis
+- Netflix Data Analysis
+- Covid-19 Dashboard
+
+### Power BI Projects
+
+- HR Dashboard
+- Sales Dashboard
+- Finance Dashboard
+
+### Machine Learning Projects
+
+- House Price Prediction
+- Customer Churn Prediction
+- Loan Approval Prediction
+
+---
+
+# 🎯 Interview Preparation
+
+### SQL
+
+- Joins
+- Subqueries
+- CTE
+- Window Functions
+- Ranking Functions
+
+### Python
+
+- Pandas
+- NumPy
+- Data Cleaning
+- EDA
+
+### Statistics
+
+- Probability
+- Hypothesis Testing
+- Correlation
+- Regression
+
+### Power BI
+
+- DAX
+- Power Query
+- Dashboard Design
+
+---
+
+# 🏆 Recommended Certifications
+
+### Beginner
+
+- Google Data Analytics
+- IBM Data Analyst
+- IBM Data Science
+
+### Intermediate
+
+- Microsoft Power BI Certification
+- SQL Certification
+
+### Advanced
+
+- AWS Data Analytics
+- Azure Data Engineer
+- TensorFlow Certification
+
+---
+
+# 🌟 Future Scope
+
+The demand for Data Analysts and Data Scientists continues to grow across industries including:
+
+- Healthcare
+- Finance
+- Retail
+- E-commerce
+- Education
+- Government
+- Manufacturing
+
+Expected growth remains strong due to AI, Machine Learning, and Big Data adoption.
+
+---
+
+# 🎯 Goal
+
+This repository serves as a complete roadmap for students and professionals aspiring to become:
+
+✅ Data Analyst
+
+✅ Business Analyst
+
+✅ Data Scientist
+
+✅ Machine Learning Engineer
+
+✅ AI Engineer
+
+---
+
+## 👨‍💻 Author
+
+**Satya Singh**
+
+Engineering Student | Data Analyst Aspirant | SQL | Python | Power BI | Machine Learning
+
+### Connect With Me
+
+- LinkedIn: Add Your LinkedIn Link
+- GitHub: Add Your GitHub Profile Link
+
+---
+
+⭐ If you found this repository useful, don't forget to star it!
